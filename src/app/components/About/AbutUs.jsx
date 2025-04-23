@@ -15,7 +15,7 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-gray-100 mb-20 mt-10 py-12 px-6 md:px-16 lg:px-24">
+    <div className="bg-gradient-to-br from-gray-50 to-gray-100 mb-20 py-12 px-6 md:px-16 lg:px-24">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Left Side - Images & Stats */}
