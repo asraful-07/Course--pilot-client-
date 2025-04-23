@@ -3,6 +3,7 @@ import Banner from "../Banner";
 import Headline from "../Headline";
 import Discount from "../Discount";
 import Review from "../Review";
+import PopularInsights from "../PopularInsights";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Headline />
       <Discount />
       <Review />
+      <PopularInsights />
     </div>
   );
 };
