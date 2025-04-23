@@ -5,6 +5,7 @@ import Discount from "../Discount";
 import Review from "../Review";
 import PopularInsights from "../PopularInsights";
 import Statice from "../Statice";
+import SuccessStories from "../SuccessStories";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Review />
       <PopularInsights />
       <Statice />
+      <SuccessStories />
     </div>
   );
 };
