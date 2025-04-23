@@ -6,6 +6,7 @@ import Review from "../Review";
 import PopularInsights from "../PopularInsights";
 import Statice from "../Statice";
 import SuccessStories from "../SuccessStories";
+import Achievement from "../Achievement";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <PopularInsights />
       <Statice />
       <SuccessStories />
+      <Achievement />
     </div>
   );
 };
