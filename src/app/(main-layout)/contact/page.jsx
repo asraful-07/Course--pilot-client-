@@ -1,4 +1,5 @@
 import Contact from "@/app/components/Contact/Contact";
+import FAQ from "@/app/components/Contact/FAQ";
 import Map from "@/app/components/Contact/Map";
 import React from "react";
 
@@ -7,6 +8,7 @@ const page = () => {
     <div>
       <Map />
       <Contact />
+      <FAQ />
     </div>
   );
 };
