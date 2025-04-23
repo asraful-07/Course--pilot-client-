@@ -1,4 +1,6 @@
 import React from "react";
+import { FiSend, FiPhone, FiMapPin, FiMail } from "react-icons/fi";
+import { FaTwitter, FaFacebookF } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -52,8 +54,8 @@ export default function Contact() {
           ></textarea>
         </div>
 
-        <button className="px-6 py-2 bg-white border border-gray-300 rounded-full hover:bg-gray-100 w-fit">
-          SEND MESSAGE
+        <button className="px-6 py-2 bg-emerald-500 text-white border border-emerald-500 rounded-full hover:bg-emerald-600 flex items-center gap-2 w-fit">
+          <FiSend /> SEND MESSAGE
         </button>
       </div>
 
@@ -61,36 +63,34 @@ export default function Contact() {
       <div className="w-full lg:w-1/3 space-y-6">
         <div>
           <h2 className="text-xl font-semibold mb-2">Before Contacting Us</h2>
-          <p className="text-sm text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
-            equidem invideo, miror magis posuere velit aliquet.
+          <p className="text-lg text-gray-500">
+            Feel free to reach out to us for any inquiries, feedback, or
+            support. We're here to help you!
           </p>
         </div>
 
         <div className="space-y-2">
           <h2 className="text-xl font-semibold">Contact Information</h2>
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <span className="text-teal-500">✈️</span> Brooklyn, NY 10036, United
+          <div className="flex items-center gap-2 text-lg text-gray-600">
+            <FiMapPin className="text-emerald-500" /> Brooklyn, NY 10036, United
             States
           </div>
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <span className="text-teal-500">📱</span> 1-800-123-1234
+          <div className="flex items-center gap-2 text-lg text-gray-600">
+            <FiPhone className="text-emerald-500" /> 1-800-123-1234
           </div>
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <span className="text-teal-500">📧</span>{" "}
-            example@language-school.com
+          <div className="flex items-center gap-2 text-lg text-gray-600">
+            <FiMail className="text-emerald-500" /> example@language-school.com
           </div>
         </div>
 
         <div>
           <h2 className="text-xl font-semibold mb-2">Social Media</h2>
           <div className="flex gap-4">
-            <button className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-100 text-sm">
-              <span>🐦</span> TWITTER
+            <button className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-full hover:bg-emerald-50 text-sm">
+              <FaTwitter className="text-emerald-500" /> TWITTER
             </button>
-            <button className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-100 text-sm">
-              <span>📘</span> FACEBOOK
+            <button className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-full hover:bg-emerald-50 text-sm">
+              <FaFacebookF className="text-emerald-500" /> FACEBOOK
             </button>
           </div>
         </div>
