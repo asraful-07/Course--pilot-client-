@@ -23,9 +23,8 @@ const faqData = [
   },
   {
     id: 4,
-    question: "Is financial aid available?",
-    answer:
-      "Yes, we offer scholarships and installment plans for eligible students.",
+    question: "Can I access the course materials anytime?",
+    answer: "Yes, all course content is available 24/7 for enrolled students.",
   },
 ];
 
@@ -37,51 +36,51 @@ const FAQ = () => {
   };
 
   return (
-    <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-10 py-20">
+    <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-16">
       {/* Left Side - Image */}
       <div className="w-full md:w-1/2">
         <img
           src="https://i.ibb.co.com/Ldd8qdnR/faq-img.webp"
           alt="Student Learning"
-          className="max-w-full"
+          className="w-full max-w-md mx-auto md:mx-0"
         />
       </div>
 
       {/* Right Side - FAQ Content */}
       <div className="w-full md:w-1/2">
-        <p className="text-green-500 font-semibold uppercase">FAQ</p>
-        <h2 className="text-3xl font-bold text-gray-900">
-          Frequently <span className="text-yellow-500">Asked</span> Questions
+        <p className="text-emerald-600 font-semibold uppercase">FAQ</p>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          Frequently <span className="text-emerald-500">Asked</span> Questions
         </h2>
 
-        <div className="mt-6 space-y-4">
+        <div className="space-y-4">
           {faqData.map((faq, index) => (
             <div
               key={faq.id}
-              className={`p-4 rounded-lg border ${
+              className={`p-5 rounded-xl border transition-all duration-300 ${
                 openIndex === index
-                  ? "bg-orange-50 border-orange-200"
-                  : "bg-gray-100 border-gray-200"
+                  ? "bg-emerald-50 border-emerald-200"
+                  : "bg-gray-50 border-gray-200"
               }`}
             >
               <button
                 className="flex items-center justify-between w-full text-left"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="text-gray-900 font-semibold flex items-center gap-3">
-                  <span className="bg-gray-900 text-white px-3 py-1 rounded-full">
+                <span className="text-gray-800 font-medium flex items-center gap-3">
+                  <span className="bg-emerald-600 text-white px-3 py-1 rounded-full text-sm">
                     {faq.id}
-                  </span>{" "}
+                  </span>
                   {faq.question}
                 </span>
                 {openIndex === index ? (
-                  <FaChevronDown className="text-orange-500" />
+                  <FaChevronDown className="text-emerald-600" />
                 ) : (
-                  <FaChevronRight className="text-gray-500" />
+                  <FaChevronRight className="text-gray-400" />
                 )}
               </button>
               {openIndex === index && (
-                <p className="mt-3 text-gray-700">{faq.answer}</p>
+                <p className="mt-3 text-gray-600 text-sm">{faq.answer}</p>
               )}
             </div>
           ))}
