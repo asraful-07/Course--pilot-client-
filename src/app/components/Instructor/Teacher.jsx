@@ -23,7 +23,7 @@ const teamMembers = [
   {
     name: "Abdul Mannan Zinnat",
     role: "DevOps & Project Management Expert",
-    image: "https://i.ibb.co.com/Z6G2kDS5/images-13.jpg",
+    image: "https://i.ibb.co.com/3yn4xmqx/download-6.jpg",
   },
   {
     name: "John Doe",
@@ -38,12 +38,12 @@ const teamMembers = [
   {
     name: "Michael Smith",
     role: "Product Manager",
-    image: "https://i.ibb.co.com/3yn4xmqx/download-6.jpg",
+    image: "https://i.ibb.co.com/hxJfrD5Q/images-12.jpg",
   },
   {
     name: "Emma Brown",
     role: "Marketing Specialist",
-    image: "https://i.ibb.co.com/hxJfrD5Q/images-12.jpg",
+    image: "https://i.ibb.co.com/Z6G2kDS5/images-13.jpg",
   },
 ];
 
