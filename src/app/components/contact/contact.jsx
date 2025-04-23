@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebookF } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col lg:flex-row justify-between p-10 mt-16 gap-10">
+    <div className="bg-gray-50 flex flex-col lg:flex-row justify-between  py-16 px-6 mt-16 gap-10">
       {/* Contact Form */}
       <div className="w-full lg:w-2/3 space-y-5">
         <div className="flex flex-col lg:flex-row gap-5">
