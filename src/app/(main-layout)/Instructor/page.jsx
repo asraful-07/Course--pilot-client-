@@ -1,4 +1,5 @@
 import Instructor from "@/app/components/Instructor/Instructor";
+import Mentor from "@/app/components/Instructor/Mentor";
 import Teacher from "@/app/components/Instructor/Teacher";
 import React from "react";
 
@@ -7,6 +8,7 @@ const page = () => {
     <div>
       <Instructor />
       <Teacher />
+      <Mentor />
     </div>
   );
 };
