@@ -1,7 +1,5 @@
 "use client";
 
-// import { usePathname } from "next/navigation";
-
 import {
   FaFacebookF,
   FaTwitter,
@@ -10,32 +8,19 @@ import {
 } from "react-icons/fa";
 
 export default function Footer() {
-  //   const pathname = usePathname();
-  //   const hiddenPaths = [
-  //     "Login",
-  //     "SignUp",
-  //     "student-dashbord",
-  //     "instructor-dashbord",
-  //     "admin-dashbord",
-  //   ];
-
-  //   if (hiddenPaths.some((path) => pathname.includes(path))) {
-  //     return null;
-  //   }
-
   return (
-    <footer className="py-12 mt-16 text-white bg-[#090614]">
+    <footer className="py-20 mt-16 text-white bg-[#090614]">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Grid Section */}
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-10 mb-10">
           {/* Top Section */}
           <div>
             <img
-              src="/assets/footer-logo.png"
+              src="https://i.ibb.co.com/XxbYytCs/footer-logo.png"
               alt="CoursePilot Logo"
               className="w-40"
             />
-            <p className="mt-4 text-gray-300 text-sm">
+            <p className="mt-4 text-gray-300 text-lg">
               Empowering education with AI-driven personalized learning. The
               ed-tech startup transforming education for all. Enjoy high-quality
               courses, expert instructors, and flexible scheduling. Join
@@ -155,3 +140,6 @@ export default function Footer() {
     </footer>
   );
 }
+
+// https://i.ibb.co.com/XxbYytCs/footer-logo.png
+// https://i.ibb.co.com/MDXGVV9L/logo.webp

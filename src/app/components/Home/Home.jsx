@@ -7,6 +7,7 @@ import PopularInsights from "../PopularInsights";
 import Statice from "../Statice";
 import SuccessStories from "../SuccessStories";
 import Achievement from "../Achievement";
+import Testimonial from "../Testimonial";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Statice />
       <SuccessStories />
       <Achievement />
+      <Testimonial />
     </div>
   );
 };

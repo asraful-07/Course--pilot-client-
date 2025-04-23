@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const students = [
   {
@@ -53,7 +52,14 @@ const students = [
     course: "UI/UX Design",
     feedback:
       "I landed my dream job after completing the UI/UX course. CoursePilot made learning engaging!",
-    image: "/assats/stories/student3.jpg",
+    image: "/assats/stories/student2.jpg",
+  },
+  {
+    name: "Sophie Williams",
+    course: "UI/UX Design",
+    feedback:
+      "I landed my dream job after completing the UI/UX course. CoursePilot made learning engaging!",
+    image: "/assats/stories/student1.jpg",
   },
 ];
 
@@ -87,14 +93,6 @@ export default function SuccessStories() {
     setIndex((prev) => (prev + 1) % (students.length - itemsPerPage + 1));
   };
 
-  const prevSlide = () => {
-    setIndex(
-      (prev) =>
-        (prev - 1 + students.length - itemsPerPage + 1) %
-        (students.length - itemsPerPage + 1)
-    );
-  };
-
   return (
     <section className="py-16 relative overflow-hidden">
       <div className="container mx-auto text-center">
@@ -119,7 +117,7 @@ export default function SuccessStories() {
               {students.map((student, i) => (
                 <div
                   key={i}
-                  className="min-w-full sm:min-w-1/2 md:min-w-1/3 dark:border rounded-2xl shadow-lg p-8 text-left flex flex-col items-center transition-all hover:shadow-xl"
+                  className="min-w-full sm:min-w-1/2 md:min-w-1/3 border rounded-lg shadow-lg p-8 text-left flex flex-col items-center transition-all hover:shadow-xl"
                 >
                   {/* Student Image */}
                   <Image
@@ -137,27 +135,13 @@ export default function SuccessStories() {
                   <p className="text-sm sm:text-base text-emerald-600 font-medium">
                     {student.course}
                   </p>
-                  <p className="text-gray-400 mt-4 text-center italic text-sm sm:text-base">
+                  <p className=" mt-4 text-center italic text-sm sm:text-base">
                     "{student.feedback}"
                   </p>
                 </div>
               ))}
             </motion.div>
           </div>
-
-          {/* Navigation Buttons */}
-          <button
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-600 p-3 rounded-full shadow-md hover:bg-gray-300 transition"
-            onClick={prevSlide}
-          >
-            <FaArrowLeft size={20} />
-          </button>
-          <button
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-600 p-3 rounded-full shadow-md hover:bg-gray-300 transition"
-            onClick={nextSlide}
-          >
-            <FaArrowRight size={20} />
-          </button>
         </div>
 
         {/* Dots Navigation */}

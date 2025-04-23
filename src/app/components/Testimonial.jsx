@@ -26,7 +26,7 @@ const testimonials = [
   },
 ];
 
-export default function TestimonialSection() {
+export default function Testimonial() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevious = () => {
@@ -44,17 +44,21 @@ export default function TestimonialSection() {
   return (
     <section className="max-w-7xl mx-auto py-16 px-4">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold mb-2">Testimonial</h2>
-        <p className="text-slate-500">
-          We value our students and whatever they say about us, is our
-          achievement.
-        </p>
+        <div className="text-center mb-8">
+          <h5 className="text-emerald-600 font-semibold text-sm uppercase bg-emerald-200 inline-block px-4 py-2 rounded-full mb-5">
+            Testimonial
+          </h5>
+          <h2 className="text-3xl font-bold w-3/4 mx-auto">
+            We value our students and whatever they say about us, is our
+            achievement.
+          </h2>
+        </div>
       </div>
 
       <div className="rounded-lg border border-gray-100 shadow-md p-8 relative">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="relative">
-            <div className="rounded-full border-8 border-[#b8e6da] w-[180px] h-[180px] overflow-hidden">
+            <div className="rounded-full border-4 border-emerald-700 w-[180px] h-[180px] overflow-hidden">
               <Image
                 src={testimonials[currentIndex].image || "/placeholder.svg"}
                 alt={testimonials[currentIndex].name}
@@ -66,7 +70,7 @@ export default function TestimonialSection() {
           </div>
 
           <div className="flex-1 flex flex-col items-center md:items-start">
-            <div className="text-[#7fcfb6] mb-4">
+            <div className="text-emerald-600 mb-4">
               <svg
                 width="80"
                 height="60"
@@ -99,7 +103,8 @@ export default function TestimonialSection() {
           </button>
           <button
             onClick={handleNext}
-            className="w-10 h-10 rounded-full bg-[#7fcfb6] text-white flex items-center justify-center hover:bg-[#6ab9a2] transition-colors"
+            className="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-800
+             transition-colors"
             aria-label="Next testimonial"
           >
             <ArrowRight size={18} />
@@ -112,7 +117,9 @@ export default function TestimonialSection() {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`h-1.5 rounded-full transition-all ${
-                index === currentIndex ? "w-8 bg-[#7fcfb6]" : "w-4 bg-gray-200"
+                index === currentIndex
+                  ? "w-8 bg-emerald-600"
+                  : "w-4 bg-gray-200"
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />
