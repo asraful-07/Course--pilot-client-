@@ -1,9 +1,10 @@
 import React from "react";
+import Home from "../components/Home/Home";
 
 const HomePage = () => {
   return (
     <div>
-      <p className="text-primary text-2xl">Home page</p>
+      <Home />
     </div>
   );
 };
