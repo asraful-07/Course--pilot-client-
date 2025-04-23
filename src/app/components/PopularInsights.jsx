@@ -6,13 +6,15 @@ const PopularInsights = () => {
   return (
     <div className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-2">
-          Popular Insights
-        </h2>
-        <p className="text-center mb-12 max-w-2xl mx-auto">
-          Discover insights through the latest analysis to enhance your
-          knowledge from our expert contributors.
-        </p>
+        <div className="text-center mb-8">
+          <h5 className="text-emerald-600 font-semibold text-sm uppercase bg-emerald-200 inline-block px-4 py-2 rounded-full mb-5">
+            Popular Insights
+          </h5>
+          <h2 className="text-3xl font-bold">
+            Discover insights through the latest analysis to enhance your
+            knowledge from our expert contributors.
+          </h2>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 */}
