@@ -38,7 +38,7 @@ const Instructor = () => {
       <div className="flex flex-wrap gap-6 mb-8">
         {/* Instructor 1 */}
         <div
-          className="bg-white shadow-md border-2 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
+          className="bg-white shadow-md border-2 border-gray-400 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
           data-aos="fade-up"
         >
           <img
@@ -65,7 +65,7 @@ const Instructor = () => {
 
         {/* Instructor 2 */}
         <div
-          className="bg-white shadow-md border-2 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
+          className="bg-white shadow-md border-2 border-gray-400 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
           data-aos="fade-up"
         >
           <img
@@ -92,7 +92,7 @@ const Instructor = () => {
 
         {/* Instructor 3 */}
         <div
-          className="bg-white shadow-md border-2 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
+          className="bg-white shadow-md border-2 border-gray-400 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
           data-aos="fade-up"
         >
           <img
@@ -119,7 +119,7 @@ const Instructor = () => {
 
         {/* Instructor 4 */}
         <div
-          className="bg-white shadow-md border-2 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
+          className="bg-white shadow-md border-2 border-gray-400 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
           data-aos="fade-up"
         >
           <img
@@ -146,7 +146,7 @@ const Instructor = () => {
 
         {/* Instructor 5 */}
         <div
-          className="bg-white shadow-md border-2 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
+          className="bg-white shadow-md border-2 border-gray-400 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
           data-aos="fade-up"
         >
           <img
@@ -173,7 +173,7 @@ const Instructor = () => {
 
         {/* Instructor 6 */}
         <div
-          className="bg-white shadow-md border-2 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
+          className="bg-white shadow-md border-2 border-gray-400 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
           data-aos="fade-up"
         >
           <img
@@ -203,7 +203,7 @@ const Instructor = () => {
           <>
             {/* Instructor 7 */}
             <div
-              className="bg-white shadow-md border-2 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
+              className="bg-white shadow-md border-2 border-gray-400 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
               data-aos="fade-up"
             >
               <img
@@ -230,7 +230,7 @@ const Instructor = () => {
 
             {/* Instructor 8 */}
             <div
-              className="bg-white shadow-md border-2 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
+              className="bg-white shadow-md border-2 border-gray-400 rounded-lg p-5 flex items-center hover:-translate-y-4 hover:shadow-lg transition-all duration-300 gap-6 w-full md:w-[calc(50%-12px)]"
               data-aos="fade-up"
             >
               <img

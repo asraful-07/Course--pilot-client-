@@ -1,9 +1,10 @@
+import Instructor from "@/app/components/Instructor/Instructor";
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <h1>Instructor</h1>
+      <Instructor />
     </div>
   );
 };
